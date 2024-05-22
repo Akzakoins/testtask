@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  overflow-x: hidden;
+
+  @media (min-width: 610px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('assets/images/background.webp') #101f25;
+  background-size: cover;
+  background-position: center;
+  font-size: 14px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#root {
+  flex: 1 1 auto;
+  min-height: 100vh;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  max-width: 610px;
+
+  & > svg,
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  & > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  & > ul {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+hr {
+  color: white;
+}
+
+.heart_svg {
+  @media (min-width: 610px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.heart_active {
+  fill: #d44f4f;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+}
+
+.text {
+  padding-left: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+  @media (min-width: 610px) {
+    padding-left: 88px;
+  }
+}

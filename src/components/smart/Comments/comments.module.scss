@@ -1,0 +1,21 @@
+.table {
+  ul {
+    padding-top: 24px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: 610px) {
+    gap: 32px;
+
+    ul {
+      padding-top: 32px;
+      padding-left: 34px;
+    }
+  }
+}
+
+.flex_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

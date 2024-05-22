@@ -1,0 +1,36 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media (min-width: 610px) {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+  }
+}
+
+.figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.created {
+  color: #8297ab;
+  font-weight: 400;
+  font-size: 1rem;
+}
