@@ -1,6 +1,6 @@
 import {FC, useCallback} from 'react';
-import {CommentsProps} from 'core/types';
-import {useAppSelector} from 'core/hooks';
+import {CommentsProps} from 'types';
+import {useAppSelector} from 'hooks';
 import {selectComments} from 'store/selectors';
 import {Comment} from 'components';
 import styles from './comments.module.scss';

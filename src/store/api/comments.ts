@@ -1,5 +1,5 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
-import {IPagination} from 'core/types';
+import {IPagination} from 'types';
 import getCommentsRequest from 'api/comments/getCommentsRequest';
 
 export const getComments = createAsyncThunk(

@@ -1,5 +1,5 @@
 import {FC, PropsWithChildren} from 'react';
-import {CommentProps} from 'core/types';
+import {CommentProps} from 'types';
 import {Author} from 'components';
 import styles from './comment.module.scss';
 

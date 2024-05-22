@@ -1,10 +1,10 @@
-import {useAppDispatch, useAppSelector} from 'core/hooks';
+import {useAppDispatch, useAppSelector} from 'hooks';
 import {useEffect, useMemo} from 'react';
 import {getAuthors, getComments} from 'store/api';
 import {Button, Comments, Statistics} from 'components';
 import {selectComments} from 'store/selectors';
 import {ReactComponent as Preloader} from 'assets/svg/preloader.svg';
-import {ERROR_MESSAGE} from 'core/constants';
+import {ERROR_MESSAGE} from 'constants';
 
 function App() {
   const {loading, page, comments, error, totalPages} =

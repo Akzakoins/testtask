@@ -1,6 +1,6 @@
-import {useAppDispatch, useAppSelector} from 'core/hooks';
+import {useAppDispatch, useAppSelector} from 'hooks';
 import {selectComments} from 'store/selectors';
-import {BUTTON_TITLE} from 'core/constants';
+import {BUTTON_TITLE} from 'constants';
 import {changePage} from 'store/reducers';
 import {getComments} from 'store/api';
 import styles from './button.module.scss';

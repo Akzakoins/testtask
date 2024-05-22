@@ -1,8 +1,8 @@
 import {FC, useState} from 'react';
 import {ReactComponent as Heart} from 'assets/svg/heart.svg';
-import {useAppDispatch} from 'core/hooks';
+import {useAppDispatch} from 'hooks';
 import {updateLikes} from 'store/reducers';
-import {LikesProps} from 'core/types';
+import {LikesProps} from 'types';
 import styles from './likes.module.scss';
 
 export const Likes: FC<LikesProps> = ({likes}) => {

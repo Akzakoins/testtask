@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {CommentsState} from 'core/types';
+import {CommentsState} from 'types';
 import {getAuthors, getComments} from 'store/api';
 
 const initialState: CommentsState = {

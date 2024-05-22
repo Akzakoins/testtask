@@ -1,5 +1,5 @@
 import {subtractHours} from 'lib/date';
-import {IPagination} from 'core/types';
+import {IPagination} from 'types';
 
 const today = new Date();
 

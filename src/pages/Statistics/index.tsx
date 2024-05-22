@@ -1,4 +1,4 @@
-import {useAppSelector} from 'core/hooks';
+import {useAppSelector} from 'hooks';
 import {selectComments} from 'store/selectors';
 import {ReactComponent as Heart} from 'assets/svg/heart.svg';
 import styles from './statistics.module.scss';

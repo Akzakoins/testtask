@@ -1,9 +1,9 @@
 import {FC} from 'react';
-import {AuthorProps} from 'core/types';
-import {useAppSelector} from 'core/hooks';
+import {AuthorProps} from 'types';
+import {useAppSelector} from 'hooks';
 import {selectComments} from 'store/selectors';
 import {Likes} from 'components';
-import {getDate} from 'core/utils';
+import {getDate} from 'utils';
 import styles from './author.module.scss';
 
 export const Author: FC<AuthorProps> = ({created, author, likes}) => {
