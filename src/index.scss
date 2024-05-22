@@ -16,6 +16,9 @@ html {
   font-style: normal;
   font-weight: 700;
   overflow-x: hidden;
+  background: url('assets/images/background.webp') #101f25;
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: 610px) {
     font-size: 16px;
@@ -32,9 +35,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('assets/images/background.webp') #101f25;
-  background-size: cover;
-  background-position: center;
+
   font-size: 14px;
   color: white;
   font-style: normal;
