@@ -2,13 +2,14 @@
   "name": "technical_task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://justkwer.github.io/technical-task",
+  "homepage": "https://akzakoins.github.io/testtask/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "format": "prettier --write '*/**/*.{ts,tsx,js,jsx,css,scss,json}' --cache --cache-location=.yarn/.cache/.prettier-cache",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
