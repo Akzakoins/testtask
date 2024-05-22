@@ -1,8 +1,8 @@
-export {Author} from './simple/Author';
-export {Comment} from './simple/Comment';
+export {Author} from '../pages/Author';
+export {Comment} from '../pages/Comment';
 
-export {Statistics} from './simple/Statistics';
-export {Comments} from './smart/Comments';
-export {Likes} from './smart/Likes';
+export {Statistics} from '../pages/Statistics';
+export {Comments} from './Comments';
+export {Likes} from './Likes';
 
-export {Button} from './smart/Button';
+export {Button} from './Button';

@@ -2,7 +2,7 @@
   "name": "technical_task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akzakoins.github.io/testtask/",
+  "homepage": "https://akzakoins.github.io/testtask",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
