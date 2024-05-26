@@ -4,13 +4,14 @@ import {getAuthors, getComments} from 'store/api';
 import {Button, Comments, Statistics} from 'components';
 import {selectComments} from 'store/selectors';
 import {ReactComponent as Preloader} from 'assets/svg/preloader.svg';
-import {ERROR_MESSAGE} from 'constants';
+import {ERROR_MESSAGE} from './constants';
 
 function App() {
   const {loading, page, comments, error, totalPages} =
     useAppSelector(selectComments);
   const dispatch = useAppDispatch();
-  const isLoading = useMemo(() => Object.values(loading), [loading]);
+  const isLoading = Object.values(loading).some(Boolean);
+  console.log(isLoading);
 
   useEffect(() => {
     dispatch(getComments(page));
@@ -20,7 +21,7 @@ function App() {
     dispatch(getAuthors());
   }, [dispatch]);
 
-  if (isLoading.every(Boolean)) return <Preloader />;
+  if (isLoading) return <Preloader />;
 
   return (
     <>
@@ -31,7 +32,7 @@ function App() {
         </>
       )}
       {error && <p>{ERROR_MESSAGE}</p>}
-      {isLoading.includes(true) && <Preloader />}
+      {isLoading && <Preloader />}
       {totalPages && page < totalPages && <Button />}
     </>
   );
